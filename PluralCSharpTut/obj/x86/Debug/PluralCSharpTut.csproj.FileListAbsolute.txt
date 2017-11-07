@@ -1,0 +1,5 @@
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/PluralCSharpTut/obj/x86/Debug/PluralCSharpTut.csproj.CoreCompileInputs.cache
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/PluralCSharpTut/bin/Debug/PluralCSharpTut.exe
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/PluralCSharpTut/bin/Debug/PluralCSharpTut.pdb
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/PluralCSharpTut/obj/x86/Debug/PluralCSharpTut.exe
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/PluralCSharpTut/obj/x86/Debug/PluralCSharpTut.pdb
