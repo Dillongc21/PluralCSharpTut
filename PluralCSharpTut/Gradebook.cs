@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace PluralCSharpTut
 {
-    class Program
+    public class Gradebook
     {
-        static void Main(string[] args)
+        public void AddGrade(float grade)
         {
-            
+            grades.Add(grade);
         }
+
+        List<float> grades;
     }
 }

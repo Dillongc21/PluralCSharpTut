@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{8F55DC40-0F5A-41E6-B1C5-6ADB8238AA5F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PluralCSharpTut/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PluralCSharpTut/Gradebook.cs">
     <Files>
-      <File FileName="PluralCSharpTut/Program.cs" Line="1" Column="1" />
+      <File FileName="PluralCSharpTut/Hello.cs" Line="13" Column="13" />
+      <File FileName="PluralCSharpTut/Gradebook.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PluralCSharpTut PreferredExecutionTarget="MonoDevelop.Default" />
