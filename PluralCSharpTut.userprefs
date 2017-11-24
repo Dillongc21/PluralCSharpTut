@@ -1,14 +1,16 @@
 ﻿<Properties StartupConfiguration="{8F55DC40-0F5A-41E6-B1C5-6ADB8238AA5F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PluralCSharpTut/Gradebook.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PluralCSharpTut/Hello.cs">
     <Files>
-      <File FileName="PluralCSharpTut/Hello.cs" Line="13" Column="13" />
-      <File FileName="PluralCSharpTut/Gradebook.cs" Line="1" Column="1" />
+      <File FileName="PluralCSharpTut/Hello.cs" Line="16" Column="1" />
+      <File FileName="PluralCSharpTut/Gradebook.cs" Line="12" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PluralCSharpTut PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/PluralCSharpTut/Hello.cs" relfile="PluralCSharpTut/Hello.cs" line="16" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
