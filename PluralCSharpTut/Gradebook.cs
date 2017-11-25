@@ -23,7 +23,19 @@ namespace Grades
         public GradeStatistics ComputeStatistics()
         {
             
-            return new GradeStatistics();
+            GradeStatistics stats = new GradeStatistics();
+
+            // Calculate Avg
+            float sum = 0;
+            foreach (float grade in grades)
+            {
+                sum += grade;
+                stats.HighGrade = Math.Max(grade, stats.HighGrade);
+                stats.LowGrade = Math.Min(grade, stats.LowGrade);
+            }
+            stats.AvgGrade = sum / grades.Count();
+
+            return stats;
         }
 
         // Static Members
