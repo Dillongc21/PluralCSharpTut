@@ -1,0 +1,8 @@
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/bin/Debug/Grades.Tests.dll
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/bin/Debug/Grades.Tests.pdb
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/bin/Debug/nunit.framework.dll
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/bin/Debug/nunit.framework.xml
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/obj/Debug/Grades.Tests.csprojResolveAssemblyReference.cache
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/obj/Debug/Grades.Tests.csproj.CoreCompileInputs.cache
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/obj/Debug/Grades.Tests.dll
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/obj/Debug/Grades.Tests.pdb

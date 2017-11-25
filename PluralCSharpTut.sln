@@ -1,7 +1,9 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluralCSharpTut", "PluralCSharpTut\PluralCSharpTut.csproj", "{8F55DC40-0F5A-41E6-B1C5-6ADB8238AA5F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grades", "PluralCSharpTut\Grades.csproj", "{8F55DC40-0F5A-41E6-B1C5-6ADB8238AA5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grades.Tests", "Grades.Tests\Grades.Tests.csproj", "{4F39BA78-D377-4B31-A1C6-80790C788A50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +15,9 @@ Global
 		{8F55DC40-0F5A-41E6-B1C5-6ADB8238AA5F}.Debug|x86.Build.0 = Debug|x86
 		{8F55DC40-0F5A-41E6-B1C5-6ADB8238AA5F}.Release|x86.ActiveCfg = Release|x86
 		{8F55DC40-0F5A-41E6-B1C5-6ADB8238AA5F}.Release|x86.Build.0 = Release|x86
+		{4F39BA78-D377-4B31-A1C6-80790C788A50}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4F39BA78-D377-4B31-A1C6-80790C788A50}.Debug|x86.Build.0 = Debug|Any CPU
+		{4F39BA78-D377-4B31-A1C6-80790C788A50}.Release|x86.ActiveCfg = Release|Any CPU
+		{4F39BA78-D377-4B31-A1C6-80790C788A50}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

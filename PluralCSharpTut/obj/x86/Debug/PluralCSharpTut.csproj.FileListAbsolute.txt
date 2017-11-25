@@ -3,3 +3,8 @@
 /Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/PluralCSharpTut/bin/Debug/PluralCSharpTut.pdb
 /Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/PluralCSharpTut/obj/x86/Debug/PluralCSharpTut.exe
 /Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/PluralCSharpTut/obj/x86/Debug/PluralCSharpTut.pdb
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/PluralCSharpTut/bin/Debug/Plugin.TextToSpeech.Abstractions.dll
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/PluralCSharpTut/bin/Debug/Plugin.TextToSpeech.dll
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/PluralCSharpTut/bin/Debug/Plugin.TextToSpeech.Abstractions.pdb
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/PluralCSharpTut/bin/Debug/Plugin.TextToSpeech.pdb
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/PluralCSharpTut/obj/x86/Debug/PluralCSharpTut.csprojResolveAssemblyReference.cache
