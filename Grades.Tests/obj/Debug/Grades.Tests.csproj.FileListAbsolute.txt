@@ -6,3 +6,5 @@
 /Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/obj/Debug/Grades.Tests.csproj.CoreCompileInputs.cache
 /Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/obj/Debug/Grades.Tests.dll
 /Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/obj/Debug/Grades.Tests.pdb
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/bin/Debug/PluralCSharpTut.exe
+/Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/bin/Debug/PluralCSharpTut.pdb
