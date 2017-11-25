@@ -8,7 +8,7 @@ namespace Grades
     public class Gradebook
     {
 
-        // Public Constructor, Modifiers, and Accessors
+        // Public Constructor, Mutators, and Accessors
 
         public Gradebook()
         {
@@ -18,6 +18,12 @@ namespace Grades
         public void AddGrade(float grade)
         {
             grades.Add(grade);
+        }
+
+        public GradeStatistics ComputeStatistics()
+        {
+            
+            return new GradeStatistics();
         }
 
         // Static Members

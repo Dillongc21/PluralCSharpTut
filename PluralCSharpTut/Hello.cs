@@ -17,9 +17,7 @@ namespace Grades
             Gradebook book2 = book;
             book2.AddGrade(75);
 
-            Console.WriteLine("Hello!");
-            Console.WriteLine(Gradebook.MaxGrade);
-            Console.WriteLine(Gradebook.MinGrade);
+            GradeStatistics stats = book2.ComputeStatistics();
         }
     }
 }
