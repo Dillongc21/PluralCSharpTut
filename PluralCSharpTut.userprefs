@@ -1,38 +1,18 @@
 ﻿<Properties StartupConfiguration="{8F55DC40-0F5A-41E6-B1C5-6ADB8238AA5F}|Default">
   <MonoDevelop.Ide.ItemProperties.Grades PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PluralCSharpTut/GradeStatistics.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PluralCSharpTut/Grades.cs">
     <Files>
-      <File FileName="PluralCSharpTut/Hello.cs" Line="6" Column="30" />
-      <File FileName="PluralCSharpTut/Gradebook.cs" Line="18" Column="42" />
-      <File FileName="Grades.Tests/GradebookTests.cs" Line="11" Column="46" />
-      <File FileName="PluralCSharpTut/GradeStatistics.cs" Line="14" Column="39" />
+      <File FileName="PluralCSharpTut/Grades.cs" Line="19" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="PluralCSharpTut" expanded="True">
-            <Node name="Grades" expanded="True">
-              <Node name="GradeStatistics.cs" selected="True" />
-            </Node>
-            <Node name="Grades.Tests" expanded="True">
-              <Node name="References" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="PluralCSharpTut" expanded="True" />
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="PluralCSharpTut" expanded="True">
-            <Node name="Grades.Tests" expanded="True">
-              <Node name="Grades" expanded="True">
-                <Node name="Tests" expanded="True">
-                  <Node name="Test" expanded="True">
-                    <Node name="TestCase" selected="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="PluralCSharpTut" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
