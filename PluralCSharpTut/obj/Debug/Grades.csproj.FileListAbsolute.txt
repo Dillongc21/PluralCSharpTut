@@ -1,0 +1,5 @@
+C:\Users\dillongc\source\repos\PluralCSharpTut\PluralCSharpTut\bin\Debug\PluralCSharpTut.exe
+C:\Users\dillongc\source\repos\PluralCSharpTut\PluralCSharpTut\bin\Debug\PluralCSharpTut.pdb
+C:\Users\dillongc\source\repos\PluralCSharpTut\PluralCSharpTut\obj\Debug\Grades.csproj.CoreCompileInputs.cache
+C:\Users\dillongc\source\repos\PluralCSharpTut\PluralCSharpTut\obj\Debug\PluralCSharpTut.exe
+C:\Users\dillongc\source\repos\PluralCSharpTut\PluralCSharpTut\obj\Debug\PluralCSharpTut.pdb

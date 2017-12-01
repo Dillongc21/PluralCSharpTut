@@ -1,0 +1,15 @@
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\bin\Debug\UnitTestProject2.dll
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\bin\Debug\UnitTestProject2.pdb
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\bin\Debug\PluralCSharpTut.exe
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\bin\Debug\PluralCSharpTut.pdb
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\obj\Debug\Grade.Tests(Win).csprojResolveAssemblyReference.cache
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\obj\Debug\Grade.Tests(Win).csproj.CoreCompileInputs.cache
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\obj\Debug\UnitTestProject2.dll
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\obj\Debug\UnitTestProject2.pdb
