@@ -9,8 +9,26 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Grades.Tests.Types
 {
     [TestClass]
-    public class ReferenceTypeTests
+    public class TypeTests
     {
+        [TestMethod]
+        public void ValueTypesPassByValue()
+        {
+            int x = 46;
+            IncrementNumber(ref x);
+
+            Assert.AreEqual(47, x);
+        }
+
+        [TestMethod]
+        public void ReferenceTypesPassByValue()
+        {
+            Gradebook book1 = new Gradebook();
+            Gradebook book2 = book1;
+            GiveBookAName(ref book2);
+
+            Assert.AreEqual("A Name", book2.Name);
+        }
 
         [TestMethod]
         public void StringComparisons()
@@ -40,6 +58,21 @@ namespace Grades.Tests.Types
             g1.Name = "Dillon's Gradebook";
 
             Assert.AreEqual(g1.Name, g2.Name);
+        }
+
+
+
+        // Private Methods
+
+        private void GiveBookAName(ref Gradebook book)
+        {
+            book = new Gradebook();
+            book.Name = "A Name";
+        }
+
+        private void IncrementNumber(ref int number)
+        {
+            number++;
         }
     }
 }
