@@ -321,3 +321,4 @@ ASALocalRun/
 .vs/PluralCSharpTut/v15/Server/sqlite3/storage.ide-wal
 *.ide
 >>>>>>> fund-types
+*.ide-shm
