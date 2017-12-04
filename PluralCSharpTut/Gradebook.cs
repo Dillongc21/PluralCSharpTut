@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,18 @@ namespace Grades
 
         // Delegates
         public event NameChangedDelegate NameChanged;
+
+        public void WriteGrades(TextWriter destination)
+        {
+            //for (int i = grades.Count; i > 0; i--)
+            //{
+            //    destination.WriteLine(grades[i-1]);
+            //}
+            foreach (float grade in grades)
+            {
+                destination.WriteLine(grade);
+            }
+        }
 
         // Public Constructor, Mutators, and Accessors
 
