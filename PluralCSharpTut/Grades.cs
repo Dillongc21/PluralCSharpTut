@@ -17,9 +17,12 @@ namespace Grades
             book.AddGrade(91);
             book.AddGrade(89.5f);
             book.AddGrade(75);
+            book.Name = "Dillon's Grade Book";
+            book.Name = null;
 
             GradeStatistics stats = book.ComputeStatistics();
 
+            Console.WriteLine(book.Name);
             WriteResult("Average Grade", stats.AverageGrade);
             WriteResult("Highest Grade", (int)stats.HighestGrade);
             WriteResult("Lowest Grade", (int)stats.LowestGrade);

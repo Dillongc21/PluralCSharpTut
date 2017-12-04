@@ -3,10 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 namespace Grades
 {
     public class Gradebook
     {
+        // Static Properties
+
+        public static float MaxGrade = 100;
+        public static float MinGrade = 0;
+
+        // Private Properties
+        private string _name;
 
         // Public Constructor, Mutators, and Accessors
 
@@ -20,7 +28,21 @@ namespace Grades
             grades.Add(grade);
         }
 
-        public string Name;
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+
+            set
+            {
+                if(!String.IsNullOrEmpty(value))
+                {
+                    _name = value;
+                }
+            }
+        }
 
         public GradeStatistics ComputeStatistics()
         {
@@ -39,11 +61,6 @@ namespace Grades
 
             return stats;
         }
-
-        // Static Members
-
-        public static float MaxGrade = 100;
-        public static float MinGrade = 0;
 
         // Private Data
 
