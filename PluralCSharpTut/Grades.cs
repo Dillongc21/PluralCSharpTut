@@ -14,10 +14,16 @@ namespace Grades
         static void Main(string[] args)
         {
             Gradebook book = new Gradebook();
+
+            book.NameChanged = new NameChangedDelegate(OnNameChanged);
+            book.NameChanged += new NameChangedDelegate(OnNameChanged2);
+            // book.NameChanged = null; <=== Crashes Program
+
             book.AddGrade(91);
             book.AddGrade(89.5f);
             book.AddGrade(75);
             book.Name = "Dillon's Grade Book";
+            book.Name = "Grade Book";
             book.Name = null;
 
             GradeStatistics stats = book.ComputeStatistics();
@@ -26,6 +32,16 @@ namespace Grades
             WriteResult("Average Grade", stats.AverageGrade);
             WriteResult("Highest Grade", (int)stats.HighestGrade);
             WriteResult("Lowest Grade", (int)stats.LowestGrade);
+        }
+
+        static void OnNameChanged(string existingName, string newName)
+        {
+            Console.WriteLine($"Grade Book changing name from {existingName} to {newName}...");
+        }
+
+        static void OnNameChanged2(string existingName, string newName)
+        {
+            Console.WriteLine("***");
         }
 
         static void WriteResult(string description, int result)

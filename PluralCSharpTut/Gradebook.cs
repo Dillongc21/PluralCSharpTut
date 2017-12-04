@@ -16,10 +16,14 @@ namespace Grades
         // Private Properties
         private string _name;
 
+        // Delegates
+        public NameChangedDelegate NameChanged;
+
         // Public Constructor, Mutators, and Accessors
 
         public Gradebook()
         {
+            _name = "Empty";
             grades = new List<float>();
         }
 
@@ -39,6 +43,11 @@ namespace Grades
             {
                 if(!String.IsNullOrEmpty(value))
                 {
+                    if(_name != value)
+                    {
+                        NameChanged(_name, value);
+                    }
+
                     _name = value;
                 }
             }
