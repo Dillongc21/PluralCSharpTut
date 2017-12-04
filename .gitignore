@@ -322,3 +322,4 @@ ASALocalRun/
 *.ide
 >>>>>>> fund-types
 *.ide-shm
+*.ide-wal
