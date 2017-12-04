@@ -17,20 +17,24 @@ namespace Grades
             // Prompt user to enter name
             try
             {
-                Console.WriteLine("Enter a name: ");
+                Console.Write("Enter a name: ");
                 book.Name = Console.ReadLine();
             }
-            
             catch(ArgumentException ex)
             {
                 Console.WriteLine(ex.Message);
+            }
+            catch(NullReferenceException)
+            {
+                Console.WriteLine("Something went wrong");
             }
 
             book.AddGrade(91);
             book.AddGrade(89.5f);
             book.AddGrade(75);
             book.WriteGrades(Console.Out);
-            
+
+            Console.WriteLine(book.Name);
             GradeStatistics stats = book.ComputeStatistics();
             WriteResult("Average Grade", stats.AverageGrade);
             WriteResult("Highest Grade", stats.HighestGrade);
