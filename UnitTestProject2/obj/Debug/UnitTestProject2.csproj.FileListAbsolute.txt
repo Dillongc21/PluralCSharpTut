@@ -1,0 +1,2 @@
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\obj\Debug\UnitTestProject2.csprojResolveAssemblyReference.cache
+C:\Users\dillongc\source\repos\PluralCSharpTut\UnitTestProject2\obj\Debug\UnitTestProject2.csproj.CoreCompileInputs.cache

@@ -8,3 +8,13 @@
 /Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/obj/Debug/Grades.Tests.pdb
 /Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/bin/Debug/PluralCSharpTut.exe
 /Users/dillonchristensen/Documents/Programming/Tutorials/c-sharp/PluralCSharpTut/Grades.Tests/bin/Debug/PluralCSharpTut.pdb
+C:\Users\dillongc\source\repos\PluralCSharpTut\Grades.Tests\bin\Debug\Grades.Tests.dll
+C:\Users\dillongc\source\repos\PluralCSharpTut\Grades.Tests\bin\Debug\Grades.Tests.pdb
+C:\Users\dillongc\source\repos\PluralCSharpTut\Grades.Tests\bin\Debug\nunit.framework.dll
+C:\Users\dillongc\source\repos\PluralCSharpTut\Grades.Tests\bin\Debug\PluralCSharpTut.exe
+C:\Users\dillongc\source\repos\PluralCSharpTut\Grades.Tests\bin\Debug\PluralCSharpTut.pdb
+C:\Users\dillongc\source\repos\PluralCSharpTut\Grades.Tests\bin\Debug\nunit.framework.xml
+C:\Users\dillongc\source\repos\PluralCSharpTut\Grades.Tests\obj\Debug\Grades.Tests.csprojResolveAssemblyReference.cache
+C:\Users\dillongc\source\repos\PluralCSharpTut\Grades.Tests\obj\Debug\Grades.Tests.csproj.CoreCompileInputs.cache
+C:\Users\dillongc\source\repos\PluralCSharpTut\Grades.Tests\obj\Debug\Grades.Tests.dll
+C:\Users\dillongc\source\repos\PluralCSharpTut\Grades.Tests\obj\Debug\Grades.Tests.pdb
