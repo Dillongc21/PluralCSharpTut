@@ -11,6 +11,47 @@ namespace Grades.Tests.Types
     [TestClass]
     public class TypeTests
     {
+        // Private Methods
+
+        private void GiveBookAName(ref Gradebook book)
+        {
+            book = new Gradebook();
+            book.Name = "A Name";
+        }
+
+        private void IncrementNumber(ref int number)
+        {
+            number++;
+        }
+
+        // Unit Tests
+
+        [TestMethod]
+        public void UppercaseString()
+        {
+            string name = "Dillon";
+            name.ToUpper();
+
+            Assert.AreNotEqual("DILLON", name);
+
+            name = name.ToUpper();
+
+            Assert.AreEqual("DILLON", name);
+        }
+
+        [TestMethod]
+        public void AddDaysToDateTime()
+        {
+            DateTime date = new DateTime(2010, 5, 25);
+            date.AddDays(2);
+
+            Assert.AreNotEqual(27, date.Day);
+
+            date = date.AddDays(2);
+
+            Assert.AreEqual(27, date.Day);
+        }
+
         [TestMethod]
         public void ValueTypesPassByValue()
         {
@@ -60,19 +101,5 @@ namespace Grades.Tests.Types
             Assert.AreEqual(g1.Name, g2.Name);
         }
 
-
-
-        // Private Methods
-
-        private void GiveBookAName(ref Gradebook book)
-        {
-            book = new Gradebook();
-            book.Name = "A Name";
-        }
-
-        private void IncrementNumber(ref int number)
-        {
-            number++;
-        }
     }
 }
