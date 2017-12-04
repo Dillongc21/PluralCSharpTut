@@ -14,12 +14,23 @@ namespace Grades
         {
             Gradebook book = new Gradebook();
 
-            book.Name = null;
+            // Prompt user to enter name
+            try
+            {
+                Console.WriteLine("Enter a name: ");
+                book.Name = Console.ReadLine();
+            }
+            
+            catch(ArgumentException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
             book.AddGrade(91);
             book.AddGrade(89.5f);
             book.AddGrade(75);
             book.WriteGrades(Console.Out);
-
+            
             GradeStatistics stats = book.ComputeStatistics();
             WriteResult("Average Grade", stats.AverageGrade);
             WriteResult("Highest Grade", stats.HighestGrade);
