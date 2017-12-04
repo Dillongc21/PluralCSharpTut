@@ -32,10 +32,10 @@ namespace Grades
             foreach (float grade in grades)
             {
                 sum += grade;
-                stats.HighGrade = Math.Max(grade, stats.HighGrade);
-                stats.LowGrade = Math.Min(grade, stats.LowGrade);
+                stats.HighestGrade = Math.Max(grade, stats.HighestGrade);
+                stats.LowestGrade = Math.Min(grade, stats.LowestGrade);
             }
-            stats.AvgGrade = sum / grades.Count();
+            stats.AverageGrade = sum / grades.Count();
 
             return stats;
         }
