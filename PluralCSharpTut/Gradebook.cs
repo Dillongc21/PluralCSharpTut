@@ -3,15 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 namespace Grades
 {
     public class Gradebook
     {
+        // Static Properties
+
+        public static float MaxGrade = 100;
+        public static float MinGrade = 0;
+
+        // Private Properties
+        private string _name;
+
+        // Delegates
+        public event NameChangedDelegate NameChanged;
 
         // Public Constructor, Mutators, and Accessors
 
         public Gradebook()
         {
+            _name = "Empty";
             grades = new List<float>();
         }
 
@@ -20,7 +32,30 @@ namespace Grades
             grades.Add(grade);
         }
 
-        public string Name;
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+
+            set
+            {
+                if(!String.IsNullOrEmpty(value))
+                {
+                    if(_name != value)
+                    {
+                        NameChangedEventArgs args = new NameChangedEventArgs();
+                        args.ExistingName = _name;
+                        args.NewName = value;
+
+                        NameChanged(this, args);
+                    }
+
+                    _name = value;
+                }
+            }
+        }
 
         public GradeStatistics ComputeStatistics()
         {
@@ -32,18 +67,13 @@ namespace Grades
             foreach (float grade in grades)
             {
                 sum += grade;
-                stats.HighGrade = Math.Max(grade, stats.HighGrade);
-                stats.LowGrade = Math.Min(grade, stats.LowGrade);
+                stats.HighestGrade = Math.Max(grade, stats.HighestGrade);
+                stats.LowestGrade = Math.Min(grade, stats.LowestGrade);
             }
-            stats.AvgGrade = sum / grades.Count();
+            stats.AverageGrade = sum / grades.Count();
 
             return stats;
         }
-
-        // Static Members
-
-        public static float MaxGrade = 100;
-        public static float MinGrade = 0;
 
         // Private Data
 
