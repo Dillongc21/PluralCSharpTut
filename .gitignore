@@ -313,3 +313,8 @@ OpenCover/
 
 # Azure Stream Analytics local run output 
 ASALocalRun/
+.vs/PluralCSharpTut/v15/.suo
+.vs/PluralCSharpTut/v15/Server/sqlite3/storage.ide
+.vs/PluralCSharpTut/v15/Server/sqlite3/storage.ide-shm
+.vs/PluralCSharpTut/v15/Server/sqlite3/storage.ide-wal
+*.ide
