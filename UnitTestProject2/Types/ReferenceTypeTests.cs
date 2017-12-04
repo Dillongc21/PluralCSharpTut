@@ -24,7 +24,22 @@ namespace Grades.Tests.Types
             number++;
         }
 
+        private void AddGrades(float[] grades)
+        {
+            grades[1] = 89.1f;
+        }
+
         // Unit Tests
+
+        [TestMethod]
+        public void UsingArrays()
+        {
+            float[] grades = new float[3];
+            AddGrades(grades);
+
+            Assert.AreEqual(89.1f, grades[1]);
+
+        }
 
         [TestMethod]
         public void UppercaseString()
