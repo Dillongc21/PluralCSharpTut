@@ -334,3 +334,5 @@ ASALocalRun/
 *.ide-wal
 .vs/PluralCSharpTut/v15/.suo
 >>>>>>> fund-methods
+*.ide-wal
+*.ide-shm

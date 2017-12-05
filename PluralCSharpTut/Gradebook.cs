@@ -17,6 +17,10 @@ namespace Grades
         // Private Properties
         private string _name;
 
+        // Protected Properties
+
+        protected List<float> grades; // protected == derived classes can use
+
         // Delegates
         public event NameChangedDelegate NameChanged;
 
@@ -74,6 +78,7 @@ namespace Grades
 
         public GradeStatistics ComputeStatistics()
         {
+            Console.WriteLine("Gradebook::ComputeStatistics");
 
             GradeStatistics stats = new GradeStatistics();
 
@@ -89,9 +94,5 @@ namespace Grades
 
             return stats;
         }
-
-        // Private Data
-
-        List<float> grades;
     }
 }
