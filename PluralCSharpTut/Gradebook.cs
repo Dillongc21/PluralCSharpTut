@@ -76,7 +76,7 @@ namespace Grades
             }
         }
 
-        public GradeStatistics ComputeStatistics()
+        public virtual GradeStatistics ComputeStatistics()
         {
             Console.WriteLine("Gradebook::ComputeStatistics");
 
