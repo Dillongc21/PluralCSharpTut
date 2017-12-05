@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{8F55DC40-0F5A-41E6-B1C5-6ADB8238AA5F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PluralCSharpTut</RootNamespace>
+    <RootNamespace>Grades</RootNamespace>
     <AssemblyName>PluralCSharpTut</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
@@ -50,6 +50,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GradeTracker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="NameChangedDelegate.cs" />
     <Compile Include="NameChangedEventArgs.cs" />

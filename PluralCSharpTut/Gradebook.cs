@@ -7,24 +7,18 @@ using System.Threading.Tasks;
 
 namespace Grades
 {
-    public class Gradebook
+    public class Gradebook : GradeTracker
     {
         // Static Properties
 
         public static float MaxGrade = 100;
         public static float MinGrade = 0;
 
-        // Private Properties
-        private string _name;
-
         // Protected Properties
 
         protected List<float> grades; // protected == derived classes can use
 
-        // Delegates
-        public event NameChangedDelegate NameChanged;
-
-        public void WriteGrades(TextWriter destination)
+        public override void WriteGrades(TextWriter destination)
         {
             //for (int i = grades.Count; i > 0; i--)
             //{
@@ -44,39 +38,12 @@ namespace Grades
             grades = new List<float>();
         }
 
-        public void AddGrade(float grade)
+        public override void AddGrade(float grade)
         {
             grades.Add(grade);
         }
 
-        public string Name
-        {
-            get
-            {
-                return _name;
-            }
-
-            set
-            {
-                if (String.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentException("Name cannot be null or empty.");
-                }
-
-                if (_name != value && NameChanged != null)
-                {
-                    NameChangedEventArgs args = new NameChangedEventArgs();
-                    args.ExistingName = _name;
-                    args.NewName = value;
-
-                    NameChanged(this, args);
-                }
-
-                _name = value;
-            }
-        }
-
-        public virtual GradeStatistics ComputeStatistics()
+        public override GradeStatistics ComputeStatistics()
         {
             Console.WriteLine("Gradebook::ComputeStatistics");
 
