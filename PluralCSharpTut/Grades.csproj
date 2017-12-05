@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GradeTracker.cs" />
+    <Compile Include="IGradeTracker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="NameChangedDelegate.cs" />
     <Compile Include="NameChangedEventArgs.cs" />
