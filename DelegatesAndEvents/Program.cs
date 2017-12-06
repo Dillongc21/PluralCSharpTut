@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 namespace DelegatesAndEvents
 {
+    public delegate int BizRulesDelegate(int x, int y);
+
     class Program
     {
         static void Main(string[] args)
         {
-            //WorkPerformedHandler del1 = new WorkPerformedHandler(WorkPerfomed1);
-            //WorkPerformedHandler del2 = new WorkPerformedHandler(WorkPerfomed2);
-            //WorkPerformedHandler del3 = new WorkPerformedHandler(WorkPerfomed3);
+            BizRulesDelegate addDel = (x, y) => x + y;
+            BizRulesDelegate multiplyDel = (x, y) => x * y;
 
-            //del1 += del2 + del3;
-
-            //DoWork(del1);
-
+            var data = new ProcessData();
+            data.Process(2, 3, addDel);
+            data.Process(2, 3, multiplyDel);
+           
             var worker = new Worker();
 
             worker.WorkPerformed += (s,e) => Console.WriteLine($"Hours worked: {e.Hours} {e.WorkType}");
@@ -58,12 +59,5 @@ namespace DelegatesAndEvents
         //    Console.WriteLine($"WorkPerformed3 called, silly buns");
         //    return hours + 3;
         //}
-    }
-
-    public enum WorkType
-    {
-        GoToMeetings,
-        Golf,
-        GenerateReports
     }
 }
