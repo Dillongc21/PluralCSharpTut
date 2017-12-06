@@ -12,19 +12,26 @@ namespace DelegatesAndEvents
     {
         static void Main(string[] args)
         {
-            BizRulesDelegate addDel = (x, y) => x + y;
-            BizRulesDelegate multiplyDel = (x, y) => x * y;
+            var custs = new List<Customer>
+            {
+                new Customer { City = "Pheonix", FirstName = "John", LastName = "Doe", ID = 1},
+                new Customer { City = "Pheonix", FirstName = "Jane", LastName = "Doe", ID = 500},
+                new Customer { City = "Seattle", FirstName = "Suki", LastName = "Pizzoro", ID = 3},
+                new Customer { City = "New York City", FirstName = "Michelle", LastName = "Smith", ID = 4}
+            };
 
-            Func<int, int, int> funcAddDel = (x, y) => x + y;
-            Func<int, int, int> funcMultiplyDel = (x, y) => x * y;
+            var phxCusts = custs
+                .Where(c => c.City == "Pheonix" && c.ID < 500)
+                .OrderBy(c => c.FirstName);
 
-            var data = new ProcessData();
-            data.ProcessFunc(2, 3, funcAddDel);
-            data.ProcessFunc(2, 3, funcMultiplyDel);
-           
+            foreach (var cust in phxCusts)
+            {
+                Console.WriteLine($"{cust.FirstName} {cust.LastName}");
+            }
+
             var worker = new Worker();
 
-            worker.WorkPerformed += (s,e) => Console.WriteLine($"Hours worked: {e.Hours} {e.WorkType}");
+            worker.WorkPerformed += (s,e) => Console.WriteLine($"Hours worked: {e.Hours} - {e.WorkType}");
             worker.WorkCompleted += (s,e) => Console.WriteLine("Worker is done.");
             worker.DoWork(8, WorkType.GenerateReports);
         }
