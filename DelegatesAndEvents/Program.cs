@@ -10,38 +10,53 @@ namespace DelegatesAndEvents
     {
         static void Main(string[] args)
         {
-            WorkPerformedHandler del1 = new WorkPerformedHandler(WorkPerfomed1);
-            WorkPerformedHandler del2 = new WorkPerformedHandler(WorkPerfomed2);
-            WorkPerformedHandler del3 = new WorkPerformedHandler(WorkPerfomed3);
+            //WorkPerformedHandler del1 = new WorkPerformedHandler(WorkPerfomed1);
+            //WorkPerformedHandler del2 = new WorkPerformedHandler(WorkPerfomed2);
+            //WorkPerformedHandler del3 = new WorkPerformedHandler(WorkPerfomed3);
 
-            del1 += del2 + del3;
+            //del1 += del2 + del3;
 
-            DoWork(del1);
+            //DoWork(del1);
+
+            var worker = new Worker();
+            worker.WorkPerformed += new EventHandler<WorkPerformedEventArgs>(Worker_WorkPerformed);
+            worker.WorkCompleted += new EventHandler(Worker_WorkCompleted);
+            worker.DoWork(8, WorkType.GenerateReports);
         }
 
-        static void DoWork(WorkPerformedHandler del)
+        private static void Worker_WorkPerformed(object sender, WorkPerformedEventArgs e)
         {
-            int finalHours = del(5, WorkType.Golf);
-            Console.WriteLine($"Final Hours: {finalHours}"); // Last delegate wins return type
+            Console.WriteLine($"Hours worked: {e.Hours} {e.WorkType}");
         }
 
-        static int WorkPerfomed1(int hours, WorkType workType)
+        private static void Worker_WorkCompleted(object sender, EventArgs e)
         {
-            Console.WriteLine($"WorkPerformed1 called- {hours}");
-            return hours + 1;
+            Console.WriteLine("Worker is done.");
         }
 
-        static int WorkPerfomed2(int hours, WorkType workType)
-        {
-            Console.WriteLine($"WorkPerformed2 called- {workType.ToString()}");
-            return hours + 2;
-        }
+        //static void DoWork(WorkPerformedHandler del)
+        //{
+        //    int finalHours = del(5, WorkType.Golf);
+        //    Console.WriteLine($"Final Hours: {finalHours}"); // Last delegate wins return type
+        //}
 
-        static int WorkPerfomed3(int hours, WorkType workType)
-        {
-            Console.WriteLine($"WorkPerformed3 called, silly buns");
-            return hours + 3;
-        }
+        //static int WorkPerfomed1(int hours, WorkType workType)
+        //{
+        //    Console.WriteLine($"WorkPerformed1 called- {hours}");
+        //    return hours + 1;
+        //}
+
+        //static int WorkPerfomed2(int hours, WorkType workType)
+        //{
+        //    Console.WriteLine($"WorkPerformed2 called- {workType.ToString()}");
+        //    return hours + 2;
+        //}
+
+        //static int WorkPerfomed3(int hours, WorkType workType)
+        //{
+        //    Console.WriteLine($"WorkPerformed3 called, silly buns");
+        //    return hours + 3;
+        //}
     }
 
     public enum WorkType

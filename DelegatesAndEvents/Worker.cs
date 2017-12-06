@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace DelegatesAndEvents
 {
-    //public delegate int WorkPerformedHandler(object sender, WorkPerformedEventArgs e);
+    //public delegate void WorkPerformedHandler(object sender, WorkPerformedEventArgs e);
 
     public class Worker
     {
+        //public event WorkPerformedHandler WorkPerformed;
         public event EventHandler<WorkPerformedEventArgs> WorkPerformed;
         public event EventHandler WorkCompleted;
 
@@ -17,6 +18,7 @@ namespace DelegatesAndEvents
         {
             for (int i = 0; i < hours; i++)
             {
+                System.Threading.Thread.Sleep(1000);
                 OnWorkPerformed(i + 1, workType);
             }
             OnWorkCompleted();
